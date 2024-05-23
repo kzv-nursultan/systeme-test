@@ -1,15 +1,9 @@
 import "./App.css";
-import { TableBody, TableHead } from "./components";
+import { RouterProvider } from "react-router-dom";
+import router from "./routing";
 
 function App() {
-  return (
-    <div className="App">
-      <table className="border w-full whitespace-nowrap">
-        <TableHead />
-        <TableBody />
-      </table>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
