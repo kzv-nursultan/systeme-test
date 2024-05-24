@@ -1,10 +1,11 @@
 import { Navigate, Outlet, RouteObject } from "react-router-dom";
 import { Layout } from "../../components";
+import { PATHS } from "../../constants/navigation";
 
 const RoutesAPI: RouteObject[] = [
   {
     id: "root",
-    path: "/",
+    path: PATHS.root,
     element: (
       <Layout>
         <Outlet />
@@ -13,21 +14,21 @@ const RoutesAPI: RouteObject[] = [
     children: [
       { index: true, element: <Navigate to="/products" /> },
       {
-        path: "/products",
+        path: PATHS.products,
         lazy: () =>
           import("../../pages").then(({ Products }) => ({
             Component: Products,
           })),
       },
       {
-        path: "/price-plans",
+        path: PATHS.pricePlans,
         lazy: () =>
           import("../../pages").then(({ PricePlans }) => ({
             Component: PricePlans,
           })),
       },
       {
-        path: "/pages",
+        path: PATHS.pages,
         lazy: () =>
           import("../../pages").then(({ Pages }) => ({
             Component: Pages,

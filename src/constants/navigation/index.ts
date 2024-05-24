@@ -1,5 +1,12 @@
+export const PATHS = {
+  root: "/",
+  products: "/products",
+  pricePlans: "/price-plans",
+  pages: "/pages",
+};
+
 export const NAVIGATION = [
-  { href: "/products", title: "Products" },
-  { href: "/price-plans", title: "Price Plans" },
-  { href: "/pages", title: "Pages" },
+  { href: PATHS.products, title: "Products" },
+  { href: PATHS.pricePlans, title: "Price Plans" },
+  { href: PATHS.pages, title: "Pages" },
 ];

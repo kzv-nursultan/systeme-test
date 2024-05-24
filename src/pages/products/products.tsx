@@ -1,71 +1,23 @@
-import { useMemo } from "react";
-import { Table } from "../../components";
+import { useMemo, useState } from "react";
+import { Heading, Table } from "../../components";
 import { Column } from "../../constants/types";
+import { PRODUCTS } from "../../constants/data/products";
+import { Product } from "../../constants/types/types";
 
-interface Product {
-  id: number;
-  name: string;
-  options: {
-    size: string;
-    amount: number;
-  };
-  active: boolean;
-  createdAt: string;
-}
-
-const products: Product[] = [
-  {
-    id: 14381328,
-
-    name: "id quis voluptate nostrud",
-
-    options: {
-      size: "XL",
-
-      amount: 100,
-    },
-
-    active: true,
-
-    createdAt: "1985-08-09T02:10:18.0Z",
-  },
-
-  {
-    id: 26785188,
-
-    name: "esse elit",
-
-    options: {
-      size: "S",
-
-      amount: 10,
-    },
-
-    active: true,
-
-    createdAt: "1956-03-20T08:59:40.0Z",
-  },
-
-  {
-    id: 63878634,
-
-    name: "enim",
-
-    options: {
-      size: "L",
-
-      amount: 20,
-    },
-
-    active: false,
-
-    createdAt: "2016-07-27T16:05:57.0Z",
-  },
-];
+const filterBySearch = (value: string) => {
+  const filtered = [...PRODUCTS].filter((prod) =>
+    prod.name.toLowerCase().includes(value.toLowerCase())
+  );
+  return filtered;
+};
 
 export default function Products() {
-  const tableColumns: Array<Column<Product>> = useMemo(
+  const [search, setSearch] = useState("");
+  const filteredData = useMemo(() => filterBySearch(search), [search]);
+
+  const columns: Array<Column<Product>> = useMemo(
     () => [
+      { key: "id", title: "ID" },
       { key: "name", title: "Name" },
       { key: "active", title: "Status" },
       {
@@ -80,9 +32,15 @@ export default function Products() {
         ],
       },
       { key: "createdAt", title: "Created" },
+      { key: "edit", title: "Edit" },
     ],
     []
   );
 
-  return <Table data={products} columns={tableColumns} />;
+  return (
+    <>
+      <Heading title="Products" onChangeHandler={setSearch} />
+      <Table data={filteredData} columns={columns} />
+    </>
+  );
 }

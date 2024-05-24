@@ -28,7 +28,7 @@ const TableState = ({ text }: { text: string }) => (
 const handleNestedData = <T extends object,>(row: Record<string, T>): Record<string, T> => {
   const noNestingObj: Record<string, T> = {};
   Object.keys(row).forEach((key) => {
-    if (key.toUpperCase() === "ID") return;
+    //if (key.toUpperCase() === "ID") return;
     if (typeof row[key] === "object") {
       Object.entries(row[key]).forEach(
         ([name, value]) => (noNestingObj[name] = value)
