@@ -1,26 +1,22 @@
+import { Column } from "../../constants/types";
 
-export const HEADER_TITLES: string[] = [
-  "name",
-  "email",
-  "age",
-  "position",
-  "department",
-  "action",
-];
+type HeaderProps<T> = {
+  columns: Column<T>[];
+};
 
-export default function TableHead() {
+export default function Head<T>({ columns }: HeaderProps<T>) {
   return (
     <thead className="bg-gray-50">
       <tr>
-        {HEADER_TITLES.map((title, i) => (
+        {columns?.map((column, i) => (
           <th
-            key={title}
+            key={i}
             scope="col"
             className={`px-6 py-3 capitalize border ${
               !i && "sticky left-0 h-fit text-black bg-slate-200"
             }`}
           >
-            {title}
+            {column.title || column.key}
           </th>
         ))}
       </tr>

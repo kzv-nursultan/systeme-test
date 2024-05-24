@@ -1,2 +1,1 @@
-export { default as TableHead } from "./table/tableHead";
-export { default as TableBody } from "./table/tableBody";
+export { default as Table } from "./table/table";
