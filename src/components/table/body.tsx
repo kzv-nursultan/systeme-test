@@ -38,10 +38,10 @@ export default function Body<T>({ data }: Props<T>) {
       {false ? (
         <TableState text="Loading..." />
       ) : (
-        data?.map((row) => (
-          <tr>
+        data?.map((row, i) => (
+          <tr key={i}>
             {Object.keys(row as object).map((key) => (
-              <DataCell>
+              <DataCell key={key}>
                 {(typeof row[key as keyof object] === "string" ||
                   typeof row[key as keyof object] === "number") &&
                   `${row[key as keyof object]}`}

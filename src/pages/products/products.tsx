@@ -64,15 +64,25 @@ const products: Product[] = [
 ];
 
 export default function Products() {
-
   const tableColumns: Array<Column<Product>> = useMemo(
     () => [
       { key: "name", title: "Name" },
       { key: "active", title: "Status" },
+      {
+        key: "options",
+        title: "Options",
+        subColumns: [
+          { key: "amount", title: "Amount" },
+          {
+            key: "size",
+            title: "Size",
+          },
+        ],
+      },
       { key: "createdAt", title: "Created" },
     ],
     []
   );
 
-  return <Table data={products} columns={tableColumns}/>;
+  return <Table data={products} columns={tableColumns} />;
 }
