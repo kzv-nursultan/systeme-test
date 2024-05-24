@@ -19,6 +19,20 @@ const RoutesAPI: RouteObject[] = [
             Component: Products,
           })),
       },
+      {
+        path: "/price-plans",
+        lazy: () =>
+          import("../../pages").then(({ PricePlans }) => ({
+            Component: PricePlans,
+          })),
+      },
+      {
+        path: "/pages",
+        lazy: () =>
+          import("../../pages").then(({ Pages }) => ({
+            Component: Pages,
+          })),
+      },
     ],
   },
 ];
