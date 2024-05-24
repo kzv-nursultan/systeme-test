@@ -45,37 +45,6 @@ export default function Head<T>({ columns }: HeaderProps<T>) {
           ))}
         </tr>
       ))}
-      {/* <tr>
-        <th className="px-6 py-3 capitalize border" rowSpan={2}>
-          name
-        </th>
-        <th className="px-6 py-3 capitalize border" rowSpan={2}>
-          status
-        </th>
-        <th className="px-6 py-3 capitalize border" rowSpan={2}>
-          created
-        </th>
-        <th className="px-6 py-3 capitalize border" colSpan={2}>
-          options
-        </th>
-      </tr>
-      <tr>
-        <th className="px-6 py-3 capitalize border">size</th>
-        <th className="px-6 py-3 capitalize border">amount</th>
-      </tr> */}
-      {/* <tr>
-        {columns?.map((column, i) => (
-          <th
-            key={i}
-            scope="col"
-            className={`px-6 py-3 capitalize border ${
-              !i && "sticky left-0 h-fit text-black bg-slate-200"
-            }`}
-          >
-            {column.title || column.key}
-          </th>
-        ))}
-      </tr> */}
     </thead>
   );
 }

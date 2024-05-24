@@ -25,31 +25,42 @@ const TableState = ({ text }: { text: string }) => (
   </tr>
 );
 
+const handleNestedData = <T extends object,>(row: Record<string, T>): Record<string, T> => {
+  const noNestingObj: Record<string, T> = {};
+  Object.keys(row).forEach((key) => {
+    if (key.toUpperCase() === "ID") return;
+    if (typeof row[key] === "object") {
+      Object.entries(row[key]).forEach(
+        ([name, value]) => (noNestingObj[name] = value)
+      );
+    } else {
+      noNestingObj[key] = row[key];
+    }
+  });
+  return noNestingObj;
+};
+
 export default function Body<T>({ data }: Props<T>) {
-  // if (employeesList?.length === 0 && !isLoading)
-  //   return (
-  //     <tbody>
-  //       <TableState text="No Data Found..." />
-  //     </tbody>
-  //   );
+  if (data?.length === 0)
+    return (
+      <tbody>
+        <TableState text="No Data Found..." />
+      </tbody>
+    );
 
   return (
     <tbody>
-      {false ? (
-        <TableState text="Loading..." />
-      ) : (
-        data?.map((row, i) => (
+      {data?.map((row, i) => {
+        const obj = handleNestedData(row as any);
+        console.log(obj);
+        return (
           <tr key={i}>
-            {Object.keys(row as object).map((key) => (
-              <DataCell key={key}>
-                {(typeof row[key as keyof object] === "string" ||
-                  typeof row[key as keyof object] === "number") &&
-                  `${row[key as keyof object]}`}
-              </DataCell>
+            {Object.keys(obj).map((key) => (
+              <DataCell key={key}>{obj[key]?.toString()}</DataCell>
             ))}
           </tr>
-        ))
-      )}
+        );
+      })}
     </tbody>
   );
 }
