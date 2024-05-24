@@ -52,7 +52,6 @@ export default function Body<T>({ data }: Props<T>) {
     <tbody>
       {data?.map((row, i) => {
         const obj = handleNestedData(row as any);
-        console.log(obj);
         return (
           <tr key={i}>
             {Object.keys(obj).map((key) => (
