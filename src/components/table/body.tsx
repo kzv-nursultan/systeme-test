@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { Dispatch, ReactNode, SetStateAction } from "react";
 import EditModal from "./editModal";
 
 interface DataCellProps {
@@ -8,6 +8,7 @@ interface DataCellProps {
 
 interface Props<T> {
   data: T[];
+  setData: Dispatch<SetStateAction<T[]>>;
   renderEdit?: boolean;
 }
 
@@ -43,7 +44,7 @@ const handleNestedData = <T extends object>(
   return noNestingObj;
 };
 
-export default function Body<T>({ data, renderEdit }: Props<T>) {
+export default function Body<T>({ data, renderEdit, setData }: Props<T>) {
   if (data?.length === 0)
     return (
       <tbody>
@@ -62,7 +63,7 @@ export default function Body<T>({ data, renderEdit }: Props<T>) {
             ))}
             {renderEdit && (
               <DataCell>
-                <EditModal row={obj} />
+                <EditModal row={obj} data={data} setData={setData} />
               </DataCell>
             )}
           </tr>

@@ -16,13 +16,14 @@ const tableColumns = [
 
 export default function Pages() {
   const [search, setSearch] = useState("");
-  const filteredData = useMemo(() => filterData(PAGES, search), [search]);
+  const [data, setData] = useState(() => PAGES);
+  const filteredData = useMemo(() => filterData(data, search), [search, data]);
 
   const columns: Column<Page>[] = useMemo(() => tableColumns, []);
   return (
     <>
       <Heading title="Pages" onChangeHandler={setSearch} />
-      <Table data={filteredData} columns={columns} />
+      <Table data={filteredData} columns={columns} editable setData={setData} />
     </>
   );
 }

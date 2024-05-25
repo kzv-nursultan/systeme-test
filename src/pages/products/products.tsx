@@ -26,13 +26,22 @@ const tableColumns = [
 
 export default function Products() {
   const [search, setSearch] = useState("");
-  const filteredData = useMemo(() => filterData(PRODUCTS, search), [search]);
+  const [products, setProducts] = useState<Product[]>(() => PRODUCTS);
+  const filteredData = useMemo(
+    () => filterData(products, search),
+    [search, products]
+  );
   const columns: Array<Column<Product>> = useMemo(() => tableColumns, []);
 
   return (
     <>
       <Heading title="Products" onChangeHandler={setSearch} />
-      <Table data={filteredData} columns={columns} editable/>
+      <Table
+        data={filteredData}
+        columns={columns}
+        editable
+        setData={setProducts}
+      />
     </>
   );
 }

@@ -1,9 +1,17 @@
-import { useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import Modal from "./modal";
 
-interface Props {
+type ID = {
+  id: number;
+};
+
+type ID_Generic<T> = ID & T;
+
+type Props<T> = {
   row: Record<string, string | object>;
-}
+  data: T[];
+  setData: Dispatch<SetStateAction<T[]>>;
+};
 
 const getStringFields = <T extends object>(data: T) => {
   return Object.entries(data).reduce((acc, [key, value]) => {
@@ -16,7 +24,7 @@ const getStringFields = <T extends object>(data: T) => {
   }, {} as Record<string, string | object>);
 };
 
-export default function EditModal({ row }: Props) {
+export default function EditModal<T>({ row, data, setData }: Props<T>) {
   const [showModal, setShowModal] = useState(false);
   const [defaultValue, setDefaultValue] = useState(() => getStringFields(row));
   const modalHandler = () => setShowModal((prev) => !prev);
@@ -27,6 +35,16 @@ export default function EditModal({ row }: Props) {
       ...prev,
       [name]: value,
     }));
+  };
+
+  const saveChanges = () => {
+    const edittedData = [...data].map((obj) =>
+      (obj as ID_Generic<T>).id === Number(row.id)
+        ? { ...obj, ...defaultValue }
+        : obj
+    );
+    setData(edittedData);
+    modalHandler();
   };
 
   return (
@@ -42,17 +60,19 @@ export default function EditModal({ row }: Props) {
         show={showModal}
         modalHandler={modalHandler}
         title="edit"
-        onConfirm={() => {}}
+        onConfirm={saveChanges}
       >
         <div className="flex gap-2 flex-col">
           {Object.entries(defaultValue).map(([key, value]) => (
-            <input
-              key={key}
-              name={key}
-              className="border py-1 px-2 rounded-lg"
-              value={value as string}
-              onChange={changeHandler}
-            />
+            <div className="text-left" key={key}>
+              <h4 className="capitalize mb-2 font-bold">{key}</h4>
+              <input
+                name={key}
+                className="border p-2 rounded-lg w-full"
+                value={value as string}
+                onChange={changeHandler}
+              />
+            </div>
           ))}
         </div>
       </Modal>

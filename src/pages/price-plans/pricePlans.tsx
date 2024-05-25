@@ -16,12 +16,21 @@ const tableColumns = [
 
 export default function PricePlans() {
   const [search, setSearch] = useState("");
-  const filteredData = useMemo(() => filterData(PRICE_PLANS, search), [search]);
+  const [pricePlans, setPricePlans] = useState<PricePlan[]>(PRICE_PLANS);
+  const filteredData = useMemo(
+    () => filterData(pricePlans, search),
+    [search, pricePlans]
+  );
   const columns: Array<Column<PricePlan>> = useMemo(() => tableColumns, []);
   return (
     <>
       <Heading title="price plans" onChangeHandler={setSearch} />
-      <Table data={filteredData} columns={columns} />
+      <Table
+        data={filteredData}
+        columns={columns}
+        editable
+        setData={setPricePlans}
+      />
     </>
   );
 }
