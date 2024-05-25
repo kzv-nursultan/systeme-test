@@ -6,8 +6,15 @@ import { Product } from "../../constants/types/types";
 import { filterData } from "../../utils/inputSearch";
 
 const tableColumns = [
-  { key: "id", title: "ID" },
-  { key: "name", title: "Name" },
+  {
+    key: "id",
+    title: "ID",
+  },
+  {
+    key: "name",
+    title: "Name",
+  },
+
   {
     key: "options",
     title: "Options",
@@ -16,12 +23,18 @@ const tableColumns = [
         key: "size",
         title: "Size",
       },
-      { key: "amount", title: "Amount" },
+      {
+        key: "amount",
+        title: "Amount",
+      },
     ],
   },
   { key: "active", title: "Status" },
   { key: "createdAt", title: "Created" },
-  { key: "edit", title: "Edit" },
+  {
+    key: "edit",
+    title: "Edit",
+  },
 ];
 
 export default function Products() {

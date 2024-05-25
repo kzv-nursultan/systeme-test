@@ -7,7 +7,7 @@ type HeaderProps<T> = {
 
 const arrangeSubColumns = <T,>(
   columns: Column<T>[]
-): { columnsTree: Array<Column<T>[]>; nestingDepth: number } => {
+): { columnsTree: Array<Column<T>[]> } => {
   const columnsTree: Array<Column<T>[]> = [[]];
   let nestingDepth = 0;
   columns.forEach((col) => {
@@ -20,14 +20,11 @@ const arrangeSubColumns = <T,>(
       columnsTree[0].push(col);
     }
   });
-  return { columnsTree, nestingDepth };
+  return { columnsTree };
 };
 
 export default function Head<T>({ columns }: HeaderProps<T>) {
-  const { columnsTree, nestingDepth } = useMemo(
-    () => arrangeSubColumns(columns),
-    [columns]
-  );
+  const { columnsTree } = useMemo(() => arrangeSubColumns(columns), [columns]);
   return (
     <thead className="bg-gray-50">
       {columnsTree.map((headRow, ind) => (
@@ -35,9 +32,9 @@ export default function Head<T>({ columns }: HeaderProps<T>) {
           {headRow.map((column, i) => (
             <th
               key={i}
-              scope="col"
-              rowSpan={column.subColumns ? undefined : nestingDepth + 1}
-              colSpan={column.subColumns && nestingDepth + 1}
+              scope={column.subColumns ? "colgroup" : "col"}
+              rowSpan={column.subColumns ? undefined : columnsTree.length - ind}
+              colSpan={column.subColumns ? columnsTree.length - ind : 0}
               className={`px-6 py-3 capitalize border`}
             >
               {column.title || column.key}
