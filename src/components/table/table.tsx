@@ -5,13 +5,14 @@ import Head from "./head";
 type TableProps<T> = {
   data: T[];
   columns: Column<T>[];
+  editable?: boolean;
 };
 
-export default function Table<T>({ data, columns }: TableProps<T>) {
+export default function Table<T>({ data, columns, editable }: TableProps<T>) {
   return (
     <table className="border w-full whitespace-nowrap">
       <Head columns={columns} />
-      <Body data={data} />
+      <Body data={data} renderEdit={editable} />
     </table>
   );
 }

@@ -32,7 +32,7 @@ export default function Products() {
   return (
     <>
       <Heading title="Products" onChangeHandler={setSearch} />
-      <Table data={filteredData} columns={columns} />
+      <Table data={filteredData} columns={columns} editable/>
     </>
   );
 }

@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import EditModal from "./editModal";
 
 interface DataCellProps {
   children: ReactNode;
@@ -7,6 +8,7 @@ interface DataCellProps {
 
 interface Props<T> {
   data: T[];
+  renderEdit?: boolean;
 }
 
 const DataCell = ({ children, styles }: DataCellProps) => (
@@ -25,10 +27,11 @@ const TableState = ({ text }: { text: string }) => (
   </tr>
 );
 
-const handleNestedData = <T extends object,>(row: Record<string, T>): Record<string, T> => {
-  const noNestingObj: Record<string, T> = {};
+const handleNestedData = <T extends object>(
+  row: Record<string, string | T>
+): Record<string, string | T> => {
+  const noNestingObj: Record<string, string | T> = {};
   Object.keys(row).forEach((key) => {
-    //if (key.toUpperCase() === "ID") return;
     if (typeof row[key] === "object") {
       Object.entries(row[key]).forEach(
         ([name, value]) => (noNestingObj[name] = value)
@@ -40,7 +43,7 @@ const handleNestedData = <T extends object,>(row: Record<string, T>): Record<str
   return noNestingObj;
 };
 
-export default function Body<T>({ data }: Props<T>) {
+export default function Body<T>({ data, renderEdit }: Props<T>) {
   if (data?.length === 0)
     return (
       <tbody>
@@ -51,12 +54,17 @@ export default function Body<T>({ data }: Props<T>) {
   return (
     <tbody>
       {data?.map((row, i) => {
-        const obj = handleNestedData(row as any);
+        const obj = handleNestedData(row as Record<string, object>);
         return (
           <tr key={i}>
             {Object.keys(obj).map((key) => (
               <DataCell key={key}>{obj[key]?.toString()}</DataCell>
             ))}
+            {renderEdit && (
+              <DataCell>
+                <EditModal row={obj} />
+              </DataCell>
+            )}
           </tr>
         );
       })}
