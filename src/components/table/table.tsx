@@ -17,9 +17,11 @@ export default function Table<T>({
   setData,
 }: TableProps<T>) {
   return (
-    <table className="border w-full whitespace-nowrap">
-      <Head columns={columns} />
-      <Body data={data} renderEdit={editable} setData={setData} />
-    </table>
+    <div className="overflow-auto">
+      <table className="w-full">
+        <Head columns={columns} />
+        <Body data={data} renderEdit={editable} setData={setData} />
+      </table>
+    </div>
   );
 }
