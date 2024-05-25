@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction, useState } from "react";
-import Modal from "./modal";
+import { Modal } from "../../shared";
 
 type ID = {
   id: number;

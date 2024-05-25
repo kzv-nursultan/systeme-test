@@ -1,9 +1,9 @@
 import { useMemo, useState } from "react";
-import { Column } from "../../constants/types";
-import { Heading, Table } from "../../components";
-import { PAGES } from "../../constants/data/pages";
-import { Page } from "../../constants/types/types";
-import { filterData } from "../../utils/inputSearch";
+import { Column } from "../../app/constants/types";
+import { PAGES } from "../../app/constants/data/pages";
+import { Page } from "../../app/constants/types/types";
+import { Heading, Table } from "../../widgets";
+import { filterData } from "../../shared";
 
 const tableColumns = [
   { key: "id", title: "ID" },

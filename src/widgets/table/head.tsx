@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { Column } from "../../constants/types";
+import { Column } from "../../app/constants/types";
 
 type HeaderProps<T> = {
   columns: Column<T>[];

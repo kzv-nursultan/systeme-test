@@ -1,9 +1,9 @@
 import { useMemo, useState } from "react";
-import { Heading, Table } from "../../components";
-import { Column } from "../../constants/types";
-import { PRODUCTS } from "../../constants/data/products";
-import { Product } from "../../constants/types/types";
-import { filterData } from "../../utils/inputSearch";
+import { Column } from "../../app/constants/types";
+import { PRODUCTS } from "../../app/constants/data/products";
+import { Product } from "../../app/constants/types/types";
+import { Heading, Table } from "../../widgets";
+import { filterData } from "../../shared";
 
 const tableColumns = [
   {

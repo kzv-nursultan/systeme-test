@@ -1,6 +1,6 @@
 import { Navigate, Outlet, RouteObject } from "react-router-dom";
-import { Layout } from "../../components";
 import { PATHS } from "../../constants/navigation";
+import { Layout } from "../../../widgets";
 
 const RoutesAPI: RouteObject[] = [
   {
@@ -16,21 +16,21 @@ const RoutesAPI: RouteObject[] = [
       {
         path: PATHS.products,
         lazy: () =>
-          import("../../pages").then(({ Products }) => ({
+          import("../../../pages").then(({ Products }) => ({
             Component: Products,
           })),
       },
       {
         path: PATHS.pricePlans,
         lazy: () =>
-          import("../../pages").then(({ PricePlans }) => ({
+          import("../../../pages").then(({ PricePlans }) => ({
             Component: PricePlans,
           })),
       },
       {
         path: PATHS.pages,
         lazy: () =>
-          import("../../pages").then(({ Pages }) => ({
+          import("../../../pages").then(({ Pages }) => ({
             Component: Pages,
           })),
       },

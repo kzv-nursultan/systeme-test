@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { NAVIGATION } from "../../constants/navigation";
+import { NAVIGATION } from "../../app/constants/navigation";
 
 export default function Header() {
   const currentPath = useMemo(() => window.location.pathname, []);

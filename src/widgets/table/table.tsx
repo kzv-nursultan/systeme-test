@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from "react";
-import { Column } from "../../constants/types";
+import { Column } from "../../app/constants/types";
 import Body from "./body";
 import Head from "./head";
 

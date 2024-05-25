@@ -1,9 +1,9 @@
 import { useMemo, useState } from "react";
-import { Heading, Table } from "../../components";
-import { Column } from "../../constants/types";
-import { PRICE_PLANS } from "../../constants/data/pricePlans";
-import { PricePlan } from "../../constants/types/types";
-import { filterData } from "../../utils/inputSearch";
+import { Column } from "../../app/constants/types";
+import { PRICE_PLANS } from "../../app/constants/data/pricePlans";
+import { PricePlan } from "../../app/constants/types/types";
+import { Heading, Table } from "../../widgets";
+import { filterData } from "../../shared";
 
 const tableColumns = [
   { key: "id", title: "ID" },
