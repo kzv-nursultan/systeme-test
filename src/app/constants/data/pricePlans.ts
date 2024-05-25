@@ -1,4 +1,4 @@
-import { PricePlan } from "../types/types";
+import { PricePlan } from "../types";
 
 export const PRICE_PLANS: PricePlan[] = [
   {

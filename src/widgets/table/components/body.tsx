@@ -1,5 +1,5 @@
 import { Dispatch, ReactNode, SetStateAction } from "react";
-import { EditModal } from "../../features";
+import { EditModal } from "../../../features";
 
 interface DataCellProps {
   children: ReactNode;
