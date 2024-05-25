@@ -11,26 +11,46 @@ const filterBySearch = (value: string) => {
   return filtered;
 };
 
+const searchByString = (search: string, object: object): boolean => {
+  return Object.values(object).some((value) => {
+    if (typeof value === "string") {
+      return value.toLowerCase().includes(search.toLowerCase());
+    } else if (typeof value === "object") {
+      return searchByString(search, value);
+    } else {
+      return value?.toString().toLowerCase().includes(search.toLowerCase());
+    }
+  });
+};
+
+const filterData = <T extends object>(data: T[], search: string): T[] => {
+  if (search === "") return data;
+  return [...data].filter((item) => {
+    console.log(searchByString(search, item));
+    return searchByString(search, item);
+  });
+};
+
 export default function Products() {
   const [search, setSearch] = useState("");
-  const filteredData = useMemo(() => filterBySearch(search), [search]);
+  const filteredData = useMemo(() => filterData(PRODUCTS, search), [search]);
 
   const columns: Array<Column<Product>> = useMemo(
     () => [
       { key: "id", title: "ID" },
       { key: "name", title: "Name" },
-      { key: "active", title: "Status" },
       {
         key: "options",
         title: "Options",
         subColumns: [
-          { key: "amount", title: "Amount" },
           {
             key: "size",
             title: "Size",
           },
+          { key: "amount", title: "Amount" },
         ],
       },
+      { key: "active", title: "Status" },
       { key: "createdAt", title: "Created" },
       { key: "edit", title: "Edit" },
     ],
