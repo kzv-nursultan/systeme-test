@@ -16,3 +16,5 @@ npm test
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to open application.
+
+Or open [https://systeme-test-sepia.vercel.app/products](https://systeme-test-sepia.vercel.app/products) to open deployed version.
