@@ -14,8 +14,8 @@ Object {
           Products
         </h1>
         <input
-          class="border py-1 px-2 rounded-lg w-1/4"
-          placeholder="search"
+          class="border p-2 rounded-lg min-w-52 md:w-1/4"
+          placeholder="Search..."
         />
       </div>
       <div
@@ -531,8 +531,8 @@ Object {
         Products
       </h1>
       <input
-        class="border py-1 px-2 rounded-lg w-1/4"
-        placeholder="search"
+        class="border p-2 rounded-lg min-w-52 md:w-1/4"
+        placeholder="Search..."
       />
     </div>
     <div

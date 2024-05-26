@@ -13,8 +13,8 @@ export default function Heading({ title, onChangeHandler }: Props) {
     <div className="flex items-center justify-between pb-3">
       <h1 className="text-xl capitalize font-bold">{title}</h1>
       <input
-        className="border py-1 px-2 rounded-lg w-1/4"
-        placeholder="search"
+        className="border p-2 rounded-lg min-w-52 md:w-1/4"
+        placeholder="Search..."
         onChange={changeHandler}
       />
     </div>
