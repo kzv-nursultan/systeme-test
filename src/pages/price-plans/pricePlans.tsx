@@ -1,8 +1,7 @@
 import { useMemo, useState } from "react";
-import { PRICE_PLANS } from "../../app/constants/data/pricePlans";
 import { Heading, Table } from "../../widgets";
 import { filterData } from "../../shared";
-import { Column, PricePlan } from "../../app/constants/types";
+import { Column, PRICE_PLANS, PricePlan } from "../../shared/constants";
 
 const tableColumns = [
   { key: "id", title: "ID" },

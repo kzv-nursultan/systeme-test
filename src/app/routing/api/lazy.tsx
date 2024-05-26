@@ -1,5 +1,5 @@
 import { Navigate, Outlet, RouteObject } from "react-router-dom";
-import { PATHS } from "../../constants/navigation";
+import { PATHS } from "../../../shared/constants/navigation";
 import { Layout } from "../../../widgets";
 
 const RoutesAPI: RouteObject[] = [

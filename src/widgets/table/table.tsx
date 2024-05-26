@@ -1,7 +1,7 @@
 import { Dispatch, SetStateAction } from "react";
 import Body from "./components/body";
 import Head from "./components/head";
-import { Column } from "../../app/constants/types";
+import { Column } from "../../shared/constants";
 
 type TableProps<T> = {
   data: T[];
