@@ -22,7 +22,7 @@ const DataCell = ({ children, styles }: DataCellProps) => (
 
 const TableState = ({ text }: { text: string }) => (
   <tr>
-    <td className="text-center" colSpan={8} rowSpan={3}>
+    <td className="text-center border" colSpan={8} rowSpan={3}>
       <p className="py-5">{text}</p>
     </td>
   </tr>
