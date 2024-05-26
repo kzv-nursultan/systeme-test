@@ -1,0 +1,1092 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages page render it should match snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="flex items-center justify-between pb-3"
+      >
+        <h1
+          class="text-xl capitalize font-bold"
+        >
+          Products
+        </h1>
+        <input
+          class="border py-1 px-2 rounded-lg w-1/4"
+          placeholder="search"
+        />
+      </div>
+      <div
+        class="overflow-auto"
+      >
+        <table
+          class="w-full"
+        >
+          <thead
+            class="bg-gray-50"
+          >
+            <tr>
+              <th
+                class="px-6 py-3 capitalize border"
+                colspan="0"
+                rowspan="2"
+                scope="col"
+              >
+                ID
+              </th>
+              <th
+                class="px-6 py-3 capitalize border"
+                colspan="0"
+                rowspan="2"
+                scope="col"
+              >
+                Name
+              </th>
+              <th
+                class="px-6 py-3 capitalize border"
+                colspan="2"
+                scope="colgroup"
+              >
+                Options
+              </th>
+              <th
+                class="px-6 py-3 capitalize border"
+                colspan="0"
+                rowspan="2"
+                scope="col"
+              >
+                Status
+              </th>
+              <th
+                class="px-6 py-3 capitalize border"
+                colspan="0"
+                rowspan="2"
+                scope="col"
+              >
+                Created
+              </th>
+              <th
+                class="px-6 py-3 capitalize border"
+                colspan="0"
+                rowspan="2"
+                scope="col"
+              >
+                Edit
+              </th>
+            </tr>
+            <tr>
+              <th
+                class="px-6 py-3 capitalize border"
+                colspan="0"
+                rowspan="1"
+                scope="col"
+              >
+                Size
+              </th>
+              <th
+                class="px-6 py-3 capitalize border"
+                colspan="0"
+                rowspan="1"
+                scope="col"
+              >
+                Amount
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                14381328
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                id quis voluptate nostrud
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                XL
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                100
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                true
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                1985-08-09T02:10:18.0Z
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                <button
+                  class="focus:outline-none capitalize text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+                  type="button"
+                >
+                  edit
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                26785188
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                esse elit
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                S
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                10
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                true
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                1956-03-20T08:59:40.0Z
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                <button
+                  class="focus:outline-none capitalize text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+                  type="button"
+                >
+                  edit
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                63878634
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                enim
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                L
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                20
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                false
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                2016-07-27T16:05:57.0Z
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                <button
+                  class="focus:outline-none capitalize text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+                  type="button"
+                >
+                  edit
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                79901249
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                eu ad
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                XXL
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                1000
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                true
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                1988-08-20T03:53:24.0Z
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                <button
+                  class="focus:outline-none capitalize text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+                  type="button"
+                >
+                  edit
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                53113051
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                proident ipsum
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                XL
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                4
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                true
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                2003-01-19T20:09:29.0Z
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                <button
+                  class="focus:outline-none capitalize text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+                  type="button"
+                >
+                  edit
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                49132779
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                aliqua adipisicing
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                S
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                22
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                false
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                2003-06-14T02:44:44.0Z
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                <button
+                  class="focus:outline-none capitalize text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+                  type="button"
+                >
+                  edit
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                12135250
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                dolor non in sunt
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                M
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                11
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                true
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                2000-08-04T19:49:04.0Z
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                <button
+                  class="focus:outline-none capitalize text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+                  type="button"
+                >
+                  edit
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                47196404
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                dolor culpa in cupidatat
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                S
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                1
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                false
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                2003-11-15T23:56:45.0Z
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                <button
+                  class="focus:outline-none capitalize text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+                  type="button"
+                >
+                  edit
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                5112903
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                sunt amet do eu ipsum
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                L
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                10
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                false
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                1968-09-24T22:07:21.0Z
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                <button
+                  class="focus:outline-none capitalize text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+                  type="button"
+                >
+                  edit
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                32497729
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                eiusmod
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                XXL
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                0
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                true
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                2012-09-24T01:42:32.0Z
+              </td>
+              <td
+                class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+              >
+                <button
+                  class="focus:outline-none capitalize text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+                  type="button"
+                >
+                  edit
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="flex items-center justify-between pb-3"
+    >
+      <h1
+        class="text-xl capitalize font-bold"
+      >
+        Products
+      </h1>
+      <input
+        class="border py-1 px-2 rounded-lg w-1/4"
+        placeholder="search"
+      />
+    </div>
+    <div
+      class="overflow-auto"
+    >
+      <table
+        class="w-full"
+      >
+        <thead
+          class="bg-gray-50"
+        >
+          <tr>
+            <th
+              class="px-6 py-3 capitalize border"
+              colspan="0"
+              rowspan="2"
+              scope="col"
+            >
+              ID
+            </th>
+            <th
+              class="px-6 py-3 capitalize border"
+              colspan="0"
+              rowspan="2"
+              scope="col"
+            >
+              Name
+            </th>
+            <th
+              class="px-6 py-3 capitalize border"
+              colspan="2"
+              scope="colgroup"
+            >
+              Options
+            </th>
+            <th
+              class="px-6 py-3 capitalize border"
+              colspan="0"
+              rowspan="2"
+              scope="col"
+            >
+              Status
+            </th>
+            <th
+              class="px-6 py-3 capitalize border"
+              colspan="0"
+              rowspan="2"
+              scope="col"
+            >
+              Created
+            </th>
+            <th
+              class="px-6 py-3 capitalize border"
+              colspan="0"
+              rowspan="2"
+              scope="col"
+            >
+              Edit
+            </th>
+          </tr>
+          <tr>
+            <th
+              class="px-6 py-3 capitalize border"
+              colspan="0"
+              rowspan="1"
+              scope="col"
+            >
+              Size
+            </th>
+            <th
+              class="px-6 py-3 capitalize border"
+              colspan="0"
+              rowspan="1"
+              scope="col"
+            >
+              Amount
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              14381328
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              id quis voluptate nostrud
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              XL
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              100
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              true
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              1985-08-09T02:10:18.0Z
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              <button
+                class="focus:outline-none capitalize text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+                type="button"
+              >
+                edit
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              26785188
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              esse elit
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              S
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              10
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              true
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              1956-03-20T08:59:40.0Z
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              <button
+                class="focus:outline-none capitalize text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+                type="button"
+              >
+                edit
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              63878634
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              enim
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              L
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              20
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              false
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              2016-07-27T16:05:57.0Z
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              <button
+                class="focus:outline-none capitalize text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+                type="button"
+              >
+                edit
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              79901249
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              eu ad
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              XXL
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              1000
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              true
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              1988-08-20T03:53:24.0Z
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              <button
+                class="focus:outline-none capitalize text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+                type="button"
+              >
+                edit
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              53113051
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              proident ipsum
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              XL
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              4
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              true
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              2003-01-19T20:09:29.0Z
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              <button
+                class="focus:outline-none capitalize text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+                type="button"
+              >
+                edit
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              49132779
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              aliqua adipisicing
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              S
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              22
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              false
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              2003-06-14T02:44:44.0Z
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              <button
+                class="focus:outline-none capitalize text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+                type="button"
+              >
+                edit
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              12135250
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              dolor non in sunt
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              M
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              11
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              true
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              2000-08-04T19:49:04.0Z
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              <button
+                class="focus:outline-none capitalize text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+                type="button"
+              >
+                edit
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              47196404
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              dolor culpa in cupidatat
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              S
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              1
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              false
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              2003-11-15T23:56:45.0Z
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              <button
+                class="focus:outline-none capitalize text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+                type="button"
+              >
+                edit
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              5112903
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              sunt amet do eu ipsum
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              L
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              10
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              false
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              1968-09-24T22:07:21.0Z
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              <button
+                class="focus:outline-none capitalize text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+                type="button"
+              >
+                edit
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              32497729
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              eiusmod
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              XXL
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              0
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              true
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              2012-09-24T01:42:32.0Z
+            </td>
+            <td
+              class="px-6 py-4 font-medium text-gray-900 text-center border undefined"
+            >
+              <button
+                class="focus:outline-none capitalize text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+                type="button"
+              >
+                edit
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
