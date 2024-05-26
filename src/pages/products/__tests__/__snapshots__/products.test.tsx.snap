@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pages page render it should match snapshot 1`] = `
+exports[`Products page render it should match snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
