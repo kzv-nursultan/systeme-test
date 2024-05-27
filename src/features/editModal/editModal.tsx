@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction, useCallback, useState } from "react";
 import { Modal } from "../../shared";
 
 type ID = {
@@ -27,7 +27,7 @@ const getStringFields = <T extends object>(data: T) => {
 export default function EditModal<T>({ row, data, setData }: Props<T>) {
   const [showModal, setShowModal] = useState(false);
   const [defaultValue, setDefaultValue] = useState(() => getStringFields(row));
-  const modalHandler = () => setShowModal((prev) => !prev);
+  const modalHandler = useCallback(() => setShowModal((prev) => !prev), []);
 
   const changeHandler = ({ target }: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = target;
@@ -38,12 +38,12 @@ export default function EditModal<T>({ row, data, setData }: Props<T>) {
   };
 
   const saveChanges = () => {
-    const edittedData = [...data].map((obj) =>
+    const editedData = [...data].map((obj) =>
       (obj as ID_Generic<T>).id === Number(row.id)
         ? { ...obj, ...defaultValue }
         : obj
     );
-    setData(edittedData);
+    setData(editedData);
     modalHandler();
   };
 
